@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>E-Commerce App</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <section class="deals">
+        <p>
+          We now accept <i class="fa fa-apple"></i> Pay for a quick and easy
+          checkout - Shop Now
+        </p>
+      </section>
+      <!-- Header Section Nav Navbar -->
+      <nav class="navbar">
+        <!-- Navbar Top Menu -->
+        <div class="menu-top flex-1">
+          <div class="menu-top-1 flex-2">
+            <ul class="flex">
+              <li><a href="#">Find a Store</a></li>
+              <li><a href="#">Contact</a></li>
+              <form action="#">
+                <input type="email" placeholder="Email Address" />
+                <button>Join</button>
+              </form>
+            </ul>
+            <a href="#">Make an Appointment</a>
+          </div>
+          <div class="menu-top-2">
+            <img src="icons/logo.png" alt="" />
+          </div>
+          <div class="menu-top-3">
+            <ul class="flex-1">
+              <li><a href="#">Welcome, Sign In</a></li>
+              <li><a href="#">Ship To</a></li>
+              <li>
+                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Navbar Main Menu -->
+        <div class="menu-main flex-1">
+          <ul class="flex">
+            <li><a href="#">New</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Boys</a></li>
+            <li><a href="#">Girls</a></li>
+            <li><a href="#">More Sizes</a></li>
+            <li><a href="#">Ties</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Our History</a></li>
+          </ul>
+          <form action="#" class="serach">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search ..."
+            />
+            <i class="fa fa-search"></i>
+          </form>
+        </div>
+      </nav>
+      <!-- End of Navbar -->
+    </header>
+    <!-- End of Header -->
+
+    <!-- Section Main -->
+    <section class="main">
+      <!-- Main section Left side -->
+      <div class="left-side">
+        <img src="images/shirt-small.jpg" alt="Side Shirt" />
+        <img src="images/person.jpg" alt="Side Person" />
+        <img src="images/shirt-small2.jpg" alt="Side Shirt 2" />
+      </div>
+      <!-- Main section Middle side -->
+      <div class="middle-side">
+        <img src="images/shirt.jpg" alt="Shirt" />
+      </div>
+      <!-- Main section Right side -->
+      <div class="right-side">
+        <div class="description">
+          <h2 class="text-name">Boys' Stillwater Sherpa 1/4-Zip</h2>
+          <p class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <a href="#"> <span class="text-small"> 28 Reviews</span></a>
+          </p>
+
+          <p class="free-shipping">
+            <span class="free-shipping"> Free ground shipping</span>
+            <span class="text-small"> on all orders over $125</span>
+          </p>
+          <!-- Prices -->
+          <p class="price">
+            <span class="price-new"> $48.99 </span>
+            <span class="price-old"> $75.50</span>
+          </p>
+        </div>
+        <!-- Choose Color -->
+        <div class="chose-color">
+          <p><span class="color">Color</span> : Camel</p>
+          <input type="color" name="choose-color" id="choose-color" />
+        </div>
+        <!-- Size Chart -->
+        <div class="size-chart">
+          <p>
+            <span class="text-bold"> Size:</span>
+            <span id="select-size">Select a size</span>
+            <span><a href="#">Size Chart</a></span>
+          </p>
+          <p class="sizes">
+            <span id="size2t" onclick="selectSize()"> 2T</span>
+            <span id="size3t" onclick="selectSize()"> 3T</span>
+            <span id="size4t" onclick="selectSize()"> 4T</span>
+            <span id="size5" onclick="selectSize()"> 5</span>
+            <span id="size6" onclick="selectSize()"> 6</span>
+            <span id="size7" onclick="selectSize()"> 7</span>
+            <span id="sizeS" onclick="selectSize()"> S</span>
+            <span id="sizeM" onclick="selectSize()"> M</span>
+            <span id="sizeL" onclick="selectSize()"> L</span>
+            <span id="sizeXL" onclick="selectSize()"> XL</span>
+          </p>
+        </div>
+        <!-- Quantity -->
+        <div class="quantity">
+          <span class="decrease">-</span>
+          <input type="text" />
+          <span class="increase">+</span>
+        </div>
+        <!-- Add to Cart -->
+        <a href="#" class="add-to-cart"> Add to Cart </a>
+        <a href="#" class="buy-online">
+          <span>Buy online, free in-store pickup</span>
+          <span>Get it today at a store near you</span>
+        </a>
+        <p class="delivery">Same Day Delivery -</p>
+        <a href="#">Check Availability</a>
+        <div class="payment">
+          <span>Pay with -</span>
+          <img src="images/paypal.png" alt="paypal" />
+          <img src="images/amazon.png" alt="amazon" />
+          <img src="images/applepay.png" alt="applepay" />
+          <img src="images/visa.png" alt="visa" />
+        </div>
+      </div>
+      <!-- End of Main - Right side -->
+    </section>
+    <!-- End of Main Section -->
+    <!-- Section Product Features -->
+    <section class="product-features">
+      <div class="left-features">
+        <h3>THE DETAILS</h3>
+        <h4>STYLE 3K001154</h4>
+        <p>
+          Our Sherpa Fleece features a stretch fabric that’s brushed on both
+          sides for optimal warmth without added weight. From the backyard to
+          the playground, class to recess, this'll keep your little guy cozy,
+          warm and looking sharp.
+        </p>
+      </div>
+      <div class="right-features">
+        <div class="right-features-1">
+          <h3>FABRIC</h3>
+          <ul>
+            <li>- 100% polyester</li>
+          </ul>
+        </div>
+        <div class="right-features-2">
+          <h3>FEATURES</h3>
+          <ul>
+            <li>- Soft, lightweight Sherpa fleece</li>
+            <li>- Stretch for comfort and mobility</li>
+            <li>- Moisture-wicking and quick-drying</li>
+            <li>- Color blocked detailing</li>
+            <li>- Logo box on the chest</li>
+            <li>- Imported</li>
+          </ul>
+        </div>
+        <div class="right-features-3">
+          <h3>CARE INSTRUCTIONS</h3>
+          <ul>
+            <li>- Machine wash</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Main Footer -->
+      <div class="footer-main">
+        <div class="footer-main-left">
+          <ul>
+            <li class="text-medium text-bold">My Account</li>
+            <li><a href="# ">Order Status </a></li>
+            <li><a href="#"> Start Order</a></li>
+            <li><a href="#"> Wish List</a></li>
+            <li><a href="#">Shipping and Returns </a></li>
+            <li><a href="#">FAQ's</a></li>
+          </ul>
+          <ul>
+            <li class="text-medium text-bold">Services</li>
+            <li><a href="# ">Our Services </a></li>
+            <li><a href="#"> Gift Cards</a></li>
+            <li><a href="#"> Size Charts</a></li>
+            <li><a href="#">Buy online - Pick up in store </a></li>
+            <li><a href="#">Custom Gifts</a></li>
+            <li><a href="#">Corporate Gifts</a></li>
+          </ul>
+          <ul>
+            <li class="text-medium text-bold">About Us</li>
+            <li><a href="# ">Our Story </a></li>
+            <li><a href="#"> Our Stores</a></li>
+            <li><a href="#"> Other Retailers</a></li>
+            <li><a href="#">Careers </a></li>
+          </ul>
+          <ul>
+            <li class="text-medium text-bold">Our Community</li>
+            <li><a href="# ">Refer a Friend </a></li>
+            <li><a href="#"> Discount</a></li>
+            <li><a href="#"> Whales for a Cause</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-main-right">
+          <p>Sign Up</p>
+          <form action="#">
+            <input class="form-control" type="email" name="" />
+            <button>Join</button>
+          </form>
+        </div>
+      </div>
+      <!-- Social Media links Footer -->
+
+      <div class="footer-follow">
+        <p>Get Connected with Us.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="#"> <i class="fa fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+          <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
+          <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+        </div>
+      </div>
+      <!-- Copyright Footer -->
+      <div class="footer-copy">
+        <p>© 2021 Vineyard Vines. All rights reserved.</p>
+        <a href="#">Privacy</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Site Map</a>
+      </div>
+    </footer>
+    <!-- JavaScript Link -->
+    <script src="js/main.js"></script>
+    <!-- JQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
